@@ -3,168 +3,171 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UI/UX Design Language Lab</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Exercise 1 - Youthful UI Showcase</title>
+    <link rel="stylesheet" href="assets/css/exercises-showcase.css" />
   </head>
-  <body data-theme="hig" data-viewport="mobile">
-    <header class="top-ribbon">
-      <div class="container-fluid px-3 px-md-4 px-xl-5">
-        <div class="top-ribbon-inner">
-          <p class="top-ribbon-text mb-0">Bootstrap UI/UX Playground</p>
+  <body class="page-body page-index">
+    <main class="page-shell">
+      <header class="topbar">
+        <div class="brand-line">
+          <a class="brand-badge" href="index.html" aria-label="Exercise index">UI</a>
+          <div class="brand-meta">
+            <span class="eyebrow">Exercise 1 / Showcase</span>
+            <h1 class="brand-title">Decorated exercise set in a youthful theme</h1>
+            <span class="brand-subtitle">Referenced from the results folder and rebuilt in responsive HTML/CSS for mobile, tablet, and web</span>
+          </div>
+        </div>
+        <div class="topbar-actions">
+          <span class="ghost-chip">Theme 3.1 / Youthful</span>
+          <span class="ghost-chip">5 exercises / 1 visual system</span>
+        </div>
+      </header>
 
-          <div class="top-ribbon-controls">
-            <div>
-              <label for="themeSelect" class="form-label top-ribbon-label mb-1">Theme</label>
-              <select id="themeSelect" class="form-select form-select-sm top-ribbon-select">
-                <option value="hig">HIG</option>
-                <option value="material">Material</option>
-              </select>
+      <section class="hero-card index-hero">
+        <span class="eyebrow">Review-ready direction</span>
+        <h2 class="display-title">A calmer review surface that lets judges inspect one exercise at a time.</h2>
+        <p class="body-copy index-note">
+          The youthful visual language is still intact, but the showcase now prioritizes clarity over decoration.
+          The main page is simplified into a review flow: pick one screen, switch the shell size, inspect it, then move on.
+        </p>
+        <div class="index-kpis">
+          <div class="index-kpi">
+            <span class="stat-label">Review flow</span>
+            <strong>One screen at a time</strong>
+          </div>
+          <div class="index-kpi">
+            <span class="stat-label">Visual system</span>
+            <strong>Same gradients, glass, and SVG effects</strong>
+          </div>
+          <div class="index-kpi">
+            <span class="stat-label">Responsive check</span>
+            <strong>Mobile, tablet, and web shells</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="review-layout">
+        <aside class="review-sidebar">
+          <section class="section-card review-group">
+            <div class="section-header">
+              <div>
+                <span class="eyebrow">Exercises</span>
+                <h2 class="section-title">Choose a screen</h2>
+              </div>
             </div>
+            <div class="review-screen-list">
+              <button class="review-screen-button is-active" type="button" data-review-source="exercies/01-mobile-home.html" data-review-label="Exercise 01 / Mobile Home" data-review-default-viewport="mobile" aria-pressed="true">
+                <span class="review-screen-code">Exercise 01</span>
+                <strong>Mobile Home</strong>
+                <span>Young shopping landing screen</span>
+              </button>
+              <button class="review-screen-button" type="button" data-review-source="exercies/02-tablet-learning-dashboard.html" data-review-label="Exercise 02 / Tablet Dashboard" data-review-default-viewport="tablet" aria-pressed="false">
+                <span class="review-screen-code">Exercise 02</span>
+                <strong>Tablet Dashboard</strong>
+                <span>Seller learning dashboard</span>
+              </button>
+              <button class="review-screen-button" type="button" data-review-source="exercies/03-web-analytics.html" data-review-label="Exercise 03 / Web Analytics" data-review-default-viewport="web" aria-pressed="false">
+                <span class="review-screen-code">Exercise 03</span>
+                <strong>Web Analytics</strong>
+                <span>Commerce performance workspace</span>
+              </button>
+              <button class="review-screen-button" type="button" data-review-source="exercies/04-mobile-checkout.html" data-review-label="Exercise 04 / Mobile Checkout" data-review-default-viewport="mobile" aria-pressed="false">
+                <span class="review-screen-code">Exercise 04</span>
+                <strong>Mobile Checkout</strong>
+                <span>Fast one-hand payment flow</span>
+              </button>
+              <button class="review-screen-button" type="button" data-review-source="exercies/05-form-profile-settings.html" data-review-label="Exercise 05 / Profile Settings" data-review-default-viewport="web" aria-pressed="false">
+                <span class="review-screen-code">Exercise 05</span>
+                <strong>Profile Settings</strong>
+                <span>Responsive seller form layout</span>
+              </button>
+            </div>
+          </section>
+
+          <section class="section-card review-group">
+            <div class="section-header">
+              <div>
+                <span class="eyebrow">Reference labs</span>
+                <h2 class="section-title">Open the original labs</h2>
+              </div>
+            </div>
+            <div class="review-screen-list">
+              <button class="review-screen-button review-screen-button--soft" type="button" data-review-source="design-language-lab.html" data-review-label="Design Language Lab" data-review-default-viewport="web" aria-pressed="false">
+                <span class="review-screen-code">Reference</span>
+                <strong>Design Language Lab</strong>
+                <span>Original theme and viewport playground</span>
+              </button>
+              <button class="review-screen-button review-screen-button--soft" type="button" data-review-source="form-controls.html" data-review-label="Form Controls Lab" data-review-default-viewport="web" aria-pressed="false">
+                <span class="review-screen-code">Reference</span>
+                <strong>Form Controls Lab</strong>
+                <span>Original form-control comparison screen</span>
+              </button>
+            </div>
+          </section>
+
+          <section class="section-card review-group">
+            <div class="section-header">
+              <div>
+                <span class="eyebrow">Judge checklist</span>
+                <h2 class="section-title">What to inspect quickly</h2>
+              </div>
+            </div>
+            <ul class="review-note-list">
+              <li>Check hierarchy, spacing, and CTA visibility before checking decoration.</li>
+              <li>Switch viewport shell to see whether the same screen still reads clearly.</li>
+              <li>Use the standalone link if you want a full-page view for closer inspection.</li>
+            </ul>
+          </section>
+        </aside>
+
+        <section class="section-card review-main review-studio">
+          <div class="section-header">
             <div>
-              <label for="viewportSelect" class="form-label top-ribbon-label mb-1">Viewport</label>
-              <select id="viewportSelect" class="form-select form-select-sm top-ribbon-select">
-                <option value="mobile">Mobile</option>
+              <span class="eyebrow">Active preview</span>
+              <h2 class="section-title">Review the selected screen in a cleaner viewport shell.</h2>
+            </div>
+            <div class="chip-row">
+              <span id="reviewScreenBadge" class="ghost-chip">Exercise 01 / Mobile Home</span>
+              <span id="reviewViewportBadge" class="ghost-chip">Mobile</span>
+            </div>
+          </div>
+          <div class="review-toolbar">
+            <label class="field" for="reviewViewportSelect">
+              Viewport shell
+              <select class="select" id="reviewViewportSelect">
+                <option value="mobile" selected>Mobile</option>
                 <option value="tablet">Tablet</option>
                 <option value="web">Web</option>
               </select>
+            </label>
+            <div class="review-actions">
+              <a id="reviewOpenLink" class="button" href="exercies/01-mobile-home.html" target="_blank" rel="noreferrer">Open standalone</a>
             </div>
           </div>
-        </div>
-      </div>
-    </header>
-
-    <main class="container-fluid px-3 px-md-4 px-xl-5 pb-4 pb-md-5 app-panel">
-      <section class="hero mb-4 mb-md-5">
-        <div class="row g-4 align-items-end">
-          <div class="col-12 col-lg-10 col-xl-9">
-            <h1 class="display-title mb-6">HIG and Material side-by-side thinking, one codebase.</h1>
-            <p class="lead-copy mb-0">
-              Toggle design language and target viewport to quickly present interaction style differences for mobile,
-              tablet, and responsive web.
-            </p>
-            <div class="d-flex flex-wrap gap-2 mt-3">
-              <a class="btn btn-outline-brand" href="form-controls.html">Open Form & Controls Screen</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="row g-4">
-        <div class="col-12 col-xl-8">
-          <div class="preview-shell p-3 p-md-4 p-xl-5">
-            <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-3">
-              <h2 class="h5 mb-0">Live Preview</h2>
-              <div class="d-flex gap-2">
-                <span id="themeBadge" class="badge text-bg-dark">HIG</span>
-                <span id="viewportBadge" class="badge badge-soft">Mobile</span>
+          <div class="review-shell">
+            <div class="review-status">
+              <div class="chip-row">
+                <span class="mini-tag">Focused reviewer mode</span>
+                <span class="ghost-chip">Effects preserved, layout simplified</span>
               </div>
             </div>
-
-            <div id="previewCanvas" class="preview-canvas">
-              <header class="screen-header px-3 px-md-4 py-3">
-                <div class="d-flex align-items-center justify-content-between">
-                  <div>
-                    <p class="tiny-label mb-1">Design Lab</p>
-                    <h3 class="screen-title mb-0">Travel Companion</h3>
-                  </div>
-                  <button class="btn btn-sm btn-brand">New Trip</button>
-                </div>
-              </header>
-
-              <div class="px-3 px-md-4 py-3">
-                <div class="accent-banner mb-3">
-                  <span class="accent-dot" aria-hidden="true"></span>
-                  Accent demonstration: status highlights and chips use the accent token.
-                </div>
-
-                <div class="row g-3 mb-3">
-                  <div class="col-12 col-md-8">
-                    <article class="content-card p-3 p-md-4 h-100">
-                      <h4 class="h6">Upcoming Journey</h4>
-                      <p class="mb-3">Tokyo, Japan • 18 Apr to 25 Apr</p>
-                      <div class="progress mb-3" role="progressbar" aria-label="Trip readiness" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: 72%">72%</div>
-                      </div>
-                      <div class="d-flex flex-wrap gap-2">
-                        <button class="btn btn-brand">Check Documents</button>
-                        <button class="btn btn-outline-brand">Open Checklist</button>
-                      </div>
-                    </article>
-                  </div>
-                  <div class="col-12 col-md-4">
-                    <article class="content-card p-3 p-md-4 h-100">
-                      <h4 class="h6">Weather</h4>
-                      <p class="temp mb-1">18°C</p>
-                      <p class="mb-0 text-secondary">Partly Cloudy</p>
-                    </article>
-                  </div>
-                </div>
-
-                <article class="content-card p-3 p-md-4 mb-3">
-                  <div class="d-flex align-items-center justify-content-between mb-3">
-                    <h4 class="h6 mb-0">Packing Essentials</h4>
-                    <a href="#" class="link-brand">View all</a>
-                  </div>
-                  <div class="row g-2">
-                    <div class="col-12 col-md-4"><div class="mini-item p-2">Passport</div></div>
-                    <div class="col-12 col-md-4"><div class="mini-item p-2">Phone Charger</div></div>
-                    <div class="col-12 col-md-4"><div class="mini-item p-2">Travel Adapter</div></div>
-                  </div>
-                </article>
-
-                <nav class="screen-nav p-2">
-                  <button class="btn nav-pill active">Home</button>
-                  <button class="btn nav-pill">Trips</button>
-                  <button class="btn nav-pill">Inbox</button>
-                  <button class="btn nav-pill">Profile</button>
-                </nav>
-              </div>
+            <div id="reviewViewport" class="review-viewport" data-review-viewport="mobile">
+              <iframe id="reviewFrame" src="exercies/01-mobile-home.html" title="Exercise review preview" loading="lazy"></iframe>
             </div>
           </div>
-
-        </div>
-
-        <div class="col-12 col-xl-4">
-          <div class="preview-shell p-3 p-md-4 h-100">
-            <h2 class="h5 mb-3">What changes with each style?</h2>
-            <ul class="insight-list mb-4">
-              <li>HIG favors airy spacing, subtle depth, and restrained accents.</li>
-              <li>Material leans into stronger elevation, bolder contrast, and denser controls.</li>
-              <li>Viewport mode resizes the same interface to tell responsive behavior stories.</li>
-            </ul>
-
-            <div class="content-card p-3 p-md-4">
-              <h3 class="h6 mb-3">Presenter Notes</h3>
-              <p class="mb-2">Use this as a shared visual baseline before creating production screens in Figma.</p>
-              <p class="mb-0">All components are Bootstrap-first with theme tokens layered through CSS variables.</p>
-            </div>
-
-            <div class="accent-showcase mt-3">
-              <p class="tiny-label mb-2">Accent Color Demo</p>
-              <div class="d-flex flex-wrap gap-2">
-                <span class="accent-chip is-solid">Solid Accent</span>
-                <span class="accent-chip is-soft">Soft Accent</span>
-                <span class="accent-chip is-outline">Outline Accent</span>
-              </div>
-            </div>
+          <div class="review-helper">
+            <article class="criteria-card">
+              <strong>One preview focus</strong>
+              <p>The page no longer competes with a large gallery of cards. The selected screen is now the main priority.</p>
+            </article>
+            <article class="criteria-card">
+              <strong>Less visual noise</strong>
+              <p>Large thumbnails and repeated summaries were removed so the judge can switch, inspect, and move on faster.</p>
+            </article>
           </div>
-        </div>
+        </section>
       </section>
     </main>
-
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="assets/js/app.jquery.js"></script>
+    <script src="assets/js/exercises-review.js"></script>
   </body>
 </html>
