@@ -1,0 +1,239 @@
+﻿/* Exercise showcase: page themes and responsive rules */
+
+.page-home {
+  --brand: #ff6b57;
+  --brand-2: #ff9a59;
+  --brand-3: #15b8a6;
+  --brand-4: #17375f;
+  --brand-5: #ffd166;
+  --page-bg-top: #fffaf6;
+  --page-bg-mid: #fff5ec;
+  --page-bg-bottom: #fff0df;
+  --page-glow-a: rgba(255, 143, 103, 0.28);
+  --page-glow-b: rgba(21, 184, 166, 0.18);
+  --page-bubble-a: rgba(255, 107, 87, 0.18);
+  --page-bubble-b: rgba(21, 184, 166, 0.14);
+  --page-shadow: 0 26px 65px rgba(255, 111, 79, 0.16);
+  --hero-art: url("../images/youth-shopping.svg");
+}
+
+.page-academy {
+  --brand: #11b6b3;
+  --brand-2: #167adf;
+  --brand-3: #ffd166;
+  --brand-4: #17375f;
+  --brand-5: #ff8f59;
+  --page-bg-top: #f3fffd;
+  --page-bg-mid: #effaf8;
+  --page-bg-bottom: #e7f4ff;
+  --page-glow-a: rgba(17, 182, 179, 0.2);
+  --page-glow-b: rgba(22, 122, 223, 0.16);
+  --page-bubble-a: rgba(17, 182, 179, 0.14);
+  --page-bubble-b: rgba(22, 122, 223, 0.12);
+  --page-shadow: 0 26px 60px rgba(17, 76, 140, 0.14);
+  --overview-art: url("../images/youth-dashboard.svg");
+}
+
+.page-analytics {
+  --brand: #4c62ff;
+  --brand-2: #10b4ff;
+  --brand-3: #18d2c1;
+  --brand-4: #17375f;
+  --brand-5: #ffd166;
+  --page-bg-top: #f7f9ff;
+  --page-bg-mid: #eff3ff;
+  --page-bg-bottom: #eefcff;
+  --page-glow-a: rgba(76, 98, 255, 0.18);
+  --page-glow-b: rgba(16, 180, 255, 0.16);
+  --page-bubble-a: rgba(76, 98, 255, 0.12);
+  --page-bubble-b: rgba(16, 180, 255, 0.12);
+  --page-shadow: 0 28px 66px rgba(38, 66, 170, 0.14);
+  --analytics-art: url("../images/youth-analytics.svg");
+}
+
+.page-checkout {
+  --brand: #ff7c4d;
+  --brand-2: #ff5fa2;
+  --brand-3: #15b8a6;
+  --brand-4: #17375f;
+  --brand-5: #ffd166;
+  --page-bg-top: #fff9f4;
+  --page-bg-mid: #fff2ea;
+  --page-bg-bottom: #fff0f7;
+  --page-glow-a: rgba(255, 124, 77, 0.22);
+  --page-glow-b: rgba(255, 95, 162, 0.14);
+  --page-bubble-a: rgba(255, 124, 77, 0.18);
+  --page-bubble-b: rgba(255, 95, 162, 0.1);
+  --page-shadow: 0 26px 64px rgba(255, 124, 77, 0.15);
+  --hero-art: url("../images/youth-checkout.svg");
+}
+
+.page-settings {
+  --brand: #19b8a8;
+  --brand-2: #5f86ff;
+  --brand-3: #ffb860;
+  --brand-4: #17375f;
+  --brand-5: #ffd166;
+  --page-bg-top: #f5fffd;
+  --page-bg-mid: #effcf8;
+  --page-bg-bottom: #f1f6ff;
+  --page-glow-a: rgba(25, 184, 168, 0.2);
+  --page-glow-b: rgba(95, 134, 255, 0.14);
+  --page-bubble-a: rgba(25, 184, 168, 0.14);
+  --page-bubble-b: rgba(95, 134, 255, 0.1);
+  --page-shadow: 0 26px 60px rgba(22, 94, 116, 0.14);
+  --profile-art: url("../images/youth-profile.svg");
+}
+
+.page-index {
+  --brand: #ff6b57;
+  --brand-2: #15b8a6;
+  --brand-3: #4c62ff;
+  --brand-4: #17375f;
+  --brand-5: #ffd166;
+  --page-bg-top: #fffaf6;
+  --page-bg-mid: #f9f7ff;
+  --page-bg-bottom: #eefcff;
+  --page-glow-a: rgba(255, 107, 87, 0.2);
+  --page-glow-b: rgba(76, 98, 255, 0.16);
+  --page-bubble-a: rgba(255, 107, 87, 0.14);
+  --page-bubble-b: rgba(76, 98, 255, 0.12);
+  --page-shadow: 0 28px 70px rgba(44, 39, 116, 0.12);
+}
+
+.page-analytics .hero-card {
+  background-image:
+    var(--analytics-art),
+    radial-gradient(circle at top right, rgba(255, 255, 255, 0.8), transparent 32%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.74));
+  background-position:
+    right 1rem bottom 1rem,
+    100% 0,
+    0 0;
+  background-repeat: no-repeat;
+  background-size:
+    min(34%, 16rem) auto,
+    auto,
+    auto;
+}
+
+@media (min-width: 640px) {
+  .page-shell {
+    width: min(calc(100% - 2rem), var(--max-page));
+    padding-top: 1.25rem;
+  }
+
+  .product-grid,
+  .course-grid,
+  .field-grid,
+  .criteria-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .page-shell {
+    width: min(calc(100% - 3rem), var(--max-page));
+    padding: 1.5rem 0 3rem;
+  }
+
+  .hero-card,
+  .section-card,
+  .form-panel,
+  .summary-card,
+  .side-card {
+    padding: 1.4rem;
+  }
+
+  .home-grid {
+    grid-template-columns: 1.15fr 0.85fr;
+    align-items: start;
+  }
+
+  .hero-layout {
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items: center;
+  }
+
+  .page-analytics .hero-card {
+    padding-right: 1.6rem;
+  }
+
+  .category-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .academy-grid {
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: start;
+  }
+
+  .analytics-layout {
+    grid-template-columns: 18rem 1fr;
+    align-items: start;
+  }
+
+  .checkout-layout {
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: start;
+  }
+
+  .settings-layout {
+    grid-template-columns: 20rem 1fr;
+    align-items: start;
+  }
+
+  .summary-card {
+    position: sticky;
+    top: 1.5rem;
+  }
+}
+
+@media (min-width: 980px) {
+  .metrics-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .form-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .index-kpis {
+    max-width: 34rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .topbar,
+  .section-header,
+  .split-head,
+  .course-head,
+  .summary-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .nav-shell {
+    position: sticky;
+    bottom: 0.75rem;
+  }
+
+  .data-table {
+    min-width: 28rem;
+  }
+
+  .index-kpis {
+    grid-template-columns: 1fr;
+  }
+
+  .page-analytics .hero-card {
+    background-size:
+      min(60%, 14rem) auto,
+      auto,
+      auto;
+    background-position:
+      right -1rem bottom -0.5rem,
+      100% 0,
+      0 0;
+  }
+}

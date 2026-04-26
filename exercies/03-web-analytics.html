@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 03 - VibeCart Growth Analytics</title>
+    <link rel="stylesheet" href="../assets/css/exercises-showcase.css" />
+  </head>
+  <body class="page-body page-analytics">
+    <main class="page-shell">
+      <header class="topbar">
+        <div class="brand-line">
+          <a class="brand-badge" href="index.html" aria-label="Back to exercise index">VC</a>
+          <div class="brand-meta">
+            <span class="eyebrow">Exercise 03 / Web Analytics</span>
+            <h1 class="brand-title">VibeCart Growth Analytics</h1>
+            <span class="brand-subtitle">A web dashboard for sellers tracking store performance</span>
+          </div>
+        </div>
+        <div class="topbar-actions">
+          <span class="ghost-chip">Updated at 09:15</span>
+          <button class="button" type="button">Export report</button>
+        </div>
+      </header>
+
+      <section class="hero-card">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Performance overview</span>
+            <h2 class="section-title">Exercise 03 is rebuilt as a workspace for traffic, orders, and revenue-driving pages.</h2>
+          </div>
+          <div class="button-row">
+            <button class="button-ghost" type="button">Compare last week</button>
+            <button class="button-secondary" type="button">Create new campaign</button>
+          </div>
+        </div>
+        <p class="body-copy">
+          The interface follows a web app mindset: a two-column layout, dedicated filters, separated KPI cards,
+          simple charts for quick reading, and a top-pages table that supports immediate action.
+        </p>
+      </section>
+
+      <section class="analytics-layout" style="margin-top: 1rem">
+        <aside style="display: grid; gap: 1rem">
+          <section class="side-card">
+            <div class="section-header">
+              <div>
+                <span class="eyebrow">Filters</span>
+                <h2 class="section-title">Dashboard filters</h2>
+              </div>
+            </div>
+            <form>
+              <div class="field-stack">
+                <label for="range">
+                  Time range
+                  <select class="select" id="range">
+                    <option>Last 7 days</option>
+                    <option>Last 30 days</option>
+                    <option>Last 90 days</option>
+                  </select>
+                </label>
+
+                <label for="channel">
+                  Sales channel
+                  <select class="select" id="channel">
+                    <option>All channels</option>
+                    <option>Livestream</option>
+                    <option>Social ads</option>
+                    <option>Organic search</option>
+                  </select>
+                </label>
+
+                <label for="segment">
+                  Product segment
+                  <select class="select" id="segment">
+                    <option>Beauty + lifestyle</option>
+                    <option>Audio</option>
+                    <option>Street wear</option>
+                  </select>
+                </label>
+              </div>
+            </form>
+            <div class="button-row" style="margin-top: 1rem">
+              <button class="button" type="button">Apply</button>
+              <button class="button-ghost" type="button">Reset</button>
+            </div>
+          </section>
+
+          <section class="side-card">
+            <div class="section-header">
+              <div>
+                <span class="eyebrow">Quick insight</span>
+                <h2 class="section-title">Actionable insights</h2>
+              </div>
+            </div>
+            <ul class="task-list">
+              <li>
+                <span class="task-bullet"></span>
+                <div class="task-copy">
+                  <strong>Bundle pages have the highest conversion rate</strong>
+                  <span>Push bundle modules higher on the home screen because they convert 1.8x better.</span>
+                </div>
+              </li>
+              <li>
+                <span class="task-bullet"></span>
+                <div class="task-copy">
+                  <strong>Livestream traffic is up 26%</strong>
+                  <span>Keep the 20:00 - 21:00 time slot because retention is consistently strong.</span>
+                </div>
+              </li>
+              <li>
+                <span class="task-bullet"></span>
+                <div class="task-copy">
+                  <strong>Bounce rate is rising on mobile web</strong>
+                  <span>Shorten the hero area and move the main CTA closer to the first screen.</span>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </aside>
+
+        <div style="display: grid; gap: 1rem">
+          <section class="metrics-grid">
+            <article class="metric-card">
+              <span class="stat-label">Visitors</span>
+              <p class="metric-value">42.1K</p>
+              <p class="metric-note">Up 14% compared with the previous 7 days</p>
+            </article>
+            <article class="metric-card">
+              <span class="stat-label">Conversion</span>
+              <p class="metric-value">4.8%</p>
+              <p class="metric-note">Strongest from bundle-focused campaigns</p>
+            </article>
+            <article class="metric-card">
+              <span class="stat-label">AOV</span>
+              <p class="metric-value">512K</p>
+              <p class="metric-note">Up 11% due to accessory upsells</p>
+            </article>
+            <article class="metric-card">
+              <span class="stat-label">Returning users</span>
+              <p class="metric-value">31%</p>
+              <p class="metric-note">A healthy repeat rate for a young audience</p>
+            </article>
+          </section>
+
+          <section class="table-card" style="padding: 1.2rem">
+            <div class="section-header">
+              <div>
+                <span class="eyebrow">Traffic trend</span>
+                <h2 class="section-title">Movement across the last 6 days</h2>
+              </div>
+              <span class="ghost-chip">Source: Mobile + social</span>
+            </div>
+            <div class="bar-chart" aria-label="Traffic bar chart">
+              <div class="bar" style="--bar-size: 42%">
+                <div class="bar-column"><div class="bar-fill"></div></div>
+                <span class="bar-label">Mon</span>
+              </div>
+              <div class="bar" style="--bar-size: 58%">
+                <div class="bar-column"><div class="bar-fill"></div></div>
+                <span class="bar-label">Tue</span>
+              </div>
+              <div class="bar" style="--bar-size: 49%">
+                <div class="bar-column"><div class="bar-fill"></div></div>
+                <span class="bar-label">Wed</span>
+              </div>
+              <div class="bar" style="--bar-size: 74%">
+                <div class="bar-column"><div class="bar-fill"></div></div>
+                <span class="bar-label">Thu</span>
+              </div>
+              <div class="bar" style="--bar-size: 91%">
+                <div class="bar-column"><div class="bar-fill"></div></div>
+                <span class="bar-label">Fri</span>
+              </div>
+              <div class="bar" style="--bar-size: 66%">
+                <div class="bar-column"><div class="bar-fill"></div></div>
+                <span class="bar-label">Sat</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="table-card" style="padding: 1.2rem">
+            <div class="section-header">
+              <div>
+                <span class="eyebrow">Top pages</span>
+                <h2 class="section-title">Pages that generate the most orders</h2>
+              </div>
+              <span class="ghost-chip">Designed for fast decisions</span>
+            </div>
+            <div class="table-wrap">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Page</th>
+                    <th>Sessions</th>
+                    <th>CVR</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Homepage / Fresh Drop</td>
+                    <td>18,400</td>
+                    <td>5.2%</td>
+                    <td><span class="badge-dot">Fast growth</span></td>
+                  </tr>
+                  <tr>
+                    <td>Combo Beauty Box</td>
+                    <td>10,960</td>
+                    <td>6.7%</td>
+                    <td><span class="badge-dot">Strong sales</span></td>
+                  </tr>
+                  <tr>
+                    <td>Livestream recap</td>
+                    <td>8,120</td>
+                    <td>4.1%</td>
+                    <td><span class="badge-dot">Stable</span></td>
+                  </tr>
+                  <tr>
+                    <td>Desk setup mini</td>
+                    <td>5,970</td>
+                    <td>3.6%</td>
+                    <td><span class="badge-dot">Needs optimization</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

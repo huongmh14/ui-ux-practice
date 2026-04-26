@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 05 - VibeCart Profile Settings</title>
+    <link rel="stylesheet" href="../assets/css/exercises-showcase.css" />
+  </head>
+  <body class="page-body page-settings">
+    <main class="page-shell">
+      <header class="topbar">
+        <div class="brand-line">
+          <a class="brand-badge" href="index.html" aria-label="Back to exercise index">VC</a>
+          <div class="brand-meta">
+            <span class="eyebrow">Exercise 05 / Profile Settings</span>
+            <h1 class="brand-title">Seller profile and account settings</h1>
+            <span class="brand-subtitle">A responsive form built for mobile, tablet, and web</span>
+          </div>
+        </div>
+        <div class="topbar-actions">
+          <a class="ghost-chip" href="04-mobile-checkout.html">Previous exercise</a>
+          <button class="button-secondary" type="button">Preview profile</button>
+        </div>
+      </header>
+
+      <section class="settings-layout">
+        <aside class="form-panel profile-card">
+          <div class="profile-visual"></div>
+          <div>
+            <span class="eyebrow">Seller identity</span>
+            <h2 class="profile-name">Ngoc Anh Studio</h2>
+            <p class="profile-role">Beauty + lifestyle seller focused on shoppers aged 18 to 27.</p>
+          </div>
+
+          <div class="profile-stats">
+            <div class="stat-block">
+              <span class="stat-label">Orders / month</span>
+              <p class="stat-value">286</p>
+            </div>
+            <div class="stat-block">
+              <span class="stat-label">Rating</span>
+              <p class="stat-value">4.9</p>
+            </div>
+            <div class="stat-block">
+              <span class="stat-label">Returning buyers</span>
+              <p class="stat-value">31%</p>
+            </div>
+          </div>
+
+          <ul class="feature-list">
+            <li>
+              <span class="task-bullet"></span>
+              <div class="task-copy">
+                <strong>Decorated profile card</strong>
+                <span>Uses a hero illustration, strong heading type, and visible stats for a premium first impression.</span>
+              </div>
+            </li>
+            <li>
+              <span class="task-bullet"></span>
+              <div class="task-copy">
+                <strong>Form split by sections</strong>
+                <span>Improves scanning on wider screens without breaking the mobile reading flow.</span>
+              </div>
+            </li>
+          </ul>
+        </aside>
+
+        <form class="form-panel">
+          <section class="form-section">
+            <div class="form-section-header">
+              <span class="eyebrow">Account</span>
+              <h2 class="section-title">Basic information</h2>
+            </div>
+            <div class="field-grid">
+              <label class="field" for="fullName">
+                Full name
+                <input class="input" id="fullName" type="text" value="Nguyen Ngoc Anh" />
+              </label>
+              <label class="field" for="email">
+                Email
+                <input class="input" id="email" type="email" value="ngocanh@vibecart.vn" />
+              </label>
+              <label class="field" for="storeName">
+                Store name
+                <input class="input" id="storeName" type="text" value="Ngoc Anh Studio" />
+              </label>
+              <label class="field" for="language">
+                Language
+                <select class="select" id="language">
+                  <option selected>English</option>
+                  <option>Vietnamese</option>
+                  <option>Japanese</option>
+                </select>
+              </label>
+              <label class="field" for="bio" style="grid-column: 1 / -1">
+                Short bio
+                <textarea class="textarea" id="bio">Curates beauty bundles, mini audio picks, and youthful lifestyle accessories. Prioritizes warm product photography, fast delivery, and responsive support through chat.</textarea>
+              </label>
+            </div>
+          </section>
+
+          <section class="form-section">
+            <div class="form-section-header">
+              <span class="eyebrow">Preferences</span>
+              <h2 class="section-title">Operating preferences</h2>
+            </div>
+            <div class="toggle-group">
+              <div class="toggle-row">
+                <div>
+                  <strong>New order alerts</strong>
+                  <p class="summary-copy">Get notified immediately when new orders or urgent messages arrive.</p>
+                </div>
+                <span class="toggle-pill is-on" aria-hidden="true"></span>
+              </div>
+              <div class="toggle-row">
+                <div>
+                  <strong>Campaign suggestions</strong>
+                  <p class="summary-copy">Allow the system to suggest vouchers and bundles for returning buyers.</p>
+                </div>
+                <span class="toggle-pill is-on" aria-hidden="true"></span>
+              </div>
+              <div class="toggle-row">
+                <div>
+                  <strong>Marketing newsletter</strong>
+                  <p class="summary-copy">Receive new case studies and shopping trends from younger audiences.</p>
+                </div>
+                <span class="toggle-pill" aria-hidden="true"></span>
+              </div>
+            </div>
+
+            <div class="field-grid" style="margin-top: 1rem">
+              <label class="field" for="theme">
+                Theme preview
+                <select class="select" id="theme">
+                  <option selected>Youthful - warm gradient</option>
+                  <option>Neutral</option>
+                  <option>Minimal</option>
+                </select>
+              </label>
+              <label class="field" for="timezone">
+                Livestream window
+                <select class="select" id="timezone">
+                  <option selected>20:00 - 21:00</option>
+                  <option>12:00 - 13:00</option>
+                  <option>21:00 - 22:00</option>
+                </select>
+              </label>
+            </div>
+          </section>
+
+          <section class="form-section">
+            <div class="form-section-header">
+              <span class="eyebrow">Security</span>
+              <h2 class="section-title">Security and access</h2>
+            </div>
+            <div class="security-list">
+              <div class="option-card">
+                <span class="icon-chip" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M7 11V8a5 5 0 0 1 10 0v3"/><rect x="5" y="11" width="14" height="9" rx="2"/></svg>
+                </span>
+                <span class="option-copy">
+                  <strong>Change password</strong>
+                  <span>Last updated 18 days ago. Refresh it before the next big sales campaign.</span>
+                </span>
+                <button class="button-ghost" type="button">Update</button>
+              </div>
+              <div class="option-card">
+                <span class="icon-chip" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 4.5 2.9 7.8 7 9 4.1-1.2 7-4.5 7-9V6l-7-3Z"/><path d="m9.5 12 1.8 1.8L15 10"/></svg>
+                </span>
+                <span class="option-copy">
+                  <strong>Enable 2-step verification</strong>
+                  <span>Recommended for accounts with access to coupons, chat, and reporting tools.</span>
+                </span>
+                <button class="button-ghost" type="button">Enable now</button>
+              </div>
+              <div class="option-card">
+                <span class="icon-chip" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="10" r="2.5"/><path d="M4 19a5 5 0 0 1 10 0"/><path d="M14 19a4 4 0 0 1 6 0"/></svg>
+                </span>
+                <span class="option-copy">
+                  <strong>Manage team members</strong>
+                  <span>Assign separate permissions for content, chat support, and order packing.</span>
+                </span>
+                <button class="button-ghost" type="button">Open list</button>
+              </div>
+            </div>
+          </section>
+
+          <div class="button-row" style="margin-top: 1rem">
+            <button class="button" type="submit">Save changes</button>
+            <button class="button-ghost" type="button">Cancel</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

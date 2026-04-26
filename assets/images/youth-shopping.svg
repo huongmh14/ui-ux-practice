@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="70" y1="26" x2="574" y2="394" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE2D4"/>
+      <stop offset="0.52" stop-color="#FFF5EE"/>
+      <stop offset="1" stop-color="#E8FFFB"/>
+    </linearGradient>
+    <linearGradient id="card" x1="110" y1="86" x2="534" y2="334" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity=".72"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="248" y1="126" x2="446" y2="306" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF7557"/>
+      <stop offset="1" stop-color="#FFB157"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="420" y1="90" x2="504" y2="198" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#12CDB8"/>
+      <stop offset="1" stop-color="#0A8F96"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="420" rx="40" fill="url(#bg)"/>
+  <circle cx="528" cy="76" r="54" fill="#fff" fill-opacity=".7"/>
+  <circle cx="92" cy="338" r="68" fill="#FF8D73" fill-opacity=".18"/>
+  <rect x="84" y="72" width="472" height="284" rx="32" fill="url(#card)" stroke="#fff" stroke-opacity=".72"/>
+  <rect x="110" y="102" width="180" height="20" rx="10" fill="#FFE0D1"/>
+  <rect x="110" y="136" width="132" height="14" rx="7" fill="#FFECE4"/>
+  <rect x="110" y="178" width="138" height="132" rx="24" fill="#FFF5EE"/>
+  <rect x="264" y="178" width="128" height="132" rx="24" fill="#FFF7F1"/>
+  <rect x="406" y="178" width="120" height="132" rx="24" fill="#F1FFFC"/>
+  <rect x="426" y="108" width="102" height="62" rx="20" fill="url(#teal)"/>
+  <rect x="118" y="318" width="172" height="16" rx="8" fill="#FFF2EA"/>
+  <rect x="306" y="318" width="220" height="16" rx="8" fill="#F3FFFB"/>
+  <g transform="translate(286 102)">
+    <path d="M74 24c0-10.493-8.507-19-19-19H43c-10.493 0-19 8.507-19 19v19H15c-11.046 0-20 8.954-20 20v76c0 11.046 8.954 20 20 20h92c11.046 0 20-8.954 20-20V63c0-11.046-8.954-20-20-20H98V24c0-10.493-8.507-19-19-19H67c-10.493 0-19 8.507-19 19v3h26v-3Z" fill="url(#accent)"/>
+    <rect x="17" y="61" width="88" height="80" rx="18" fill="#fff" fill-opacity=".18"/>
+    <circle cx="40" cy="92" r="12" fill="#fff" fill-opacity=".82"/>
+    <path d="M58 118c9.941 0 18-8.059 18-18 0-9.941-8.059-18-18-18S40 90.059 40 100c0 9.941 8.059 18 18 18Z" fill="#FFF2EA"/>
+    <path d="M28 126c11-10.667 21-16 30-16s19 5.333 30 16" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  <rect x="438" y="122" width="44" height="10" rx="5" fill="#fff" fill-opacity=".78"/>
+  <rect x="438" y="140" width="58" height="10" rx="5" fill="#fff" fill-opacity=".5"/>
+</svg>

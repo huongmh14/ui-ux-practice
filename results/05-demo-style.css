@@ -1,0 +1,55 @@
+/* Theme: Profile & Settings - Apple Minimalist Depth */
+:root {
+  /* Color tokens - Teal theme */
+  --color-primary: #0891b2;
+  --color-secondary: #06b6d4;
+  --color-accent: #ec4899;
+  --color-bg: #ffffff;
+  --color-surface: #cffafe;
+  --color-text: #164e63;
+  --color-text-muted: #0e7490;
+  --color-text-light: #155e75;
+  --color-border: #a5f3fc;
+  
+  /* Typography */
+  --font-family-body: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-family-display: "Fraunces", serif;
+  --font-size-base: 16px;
+  --base-unit: calc(var(--font-size-base) / 4);
+  
+  /* Spacing & Sizing */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --shadow-sm: 0 2px 8px rgba(22, 78, 99, 0.06);
+  --shadow-md: 0 8px 16px rgba(22, 78, 99, 0.1);
+  --shadow-lg: 0 18px 40px rgba(22, 78, 99, 0.12);
+}
+
+* { box-sizing: border-box; }
+html, body { font-family: var(--font-family-body); color: var(--color-text); background: #f0f9fb; }
+.content-card { background: rgba(207, 250, 254, 0.5); border: 1px solid rgba(165, 243, 252, 0.6); border-radius: 16px; box-shadow: 0 2px 8px rgba(8, 145, 178, 0.04), 0 4px 16px rgba(8, 145, 178, 0.06), inset 0 1px 2px rgba(255, 255, 255, 0.6); }
+.btn-brand { background: linear-gradient(120deg, var(--color-primary), color-mix(in srgb, var(--color-primary) 85%, black)); color: white; border: 0; border-radius: 999px; }
+.btn-brand:hover { background: linear-gradient(120deg, color-mix(in srgb, var(--color-primary) 95%, black), color-mix(in srgb, var(--color-primary) 70%, black)); color: white; }
+.btn-outline-brand { background-color: transparent; color: var(--color-primary); border: 1px solid var(--color-primary); border-radius: 999px; }
+.btn-outline-brand:hover { background-color: var(--color-surface); color: var(--color-primary); border-color: var(--color-primary); }
+.link-brand { color: var(--color-primary); text-decoration: none; }
+.link-brand:hover { color: color-mix(in srgb, var(--color-primary) 85%, black); text-decoration: underline; }
+.badge-soft { background-color: color-mix(in srgb, var(--color-accent) 12%, white); color: color-mix(in srgb, var(--color-accent) 80%, black); border: 1px solid color-mix(in srgb, var(--color-accent) 25%, var(--color-border)); border-radius: 999px; padding: 0.3rem 0.65rem; font-size: 0.85rem; font-weight: 500; }
+.form-label { color: var(--color-text); font-weight: 500; font-size: 0.95rem; }
+.form-control, .form-select { border-color: var(--color-border); color: var(--color-text); }
+.form-control:focus, .form-select:focus { border-color: var(--color-primary); box-shadow: 0 0 0 0.2rem color-mix(in srgb, var(--color-primary) 20%, transparent); }
+.table { color: var(--color-text); }
+.table thead th { border-color: var(--color-border); color: var(--color-text); font-weight: 600; }
+.table tbody tr { border-color: var(--color-border); }
+.insight-list { list-style: none; padding: 0; margin: 0; }
+.insight-list li { padding: 0.5rem 0; color: var(--color-text-muted); border-bottom: 1px solid var(--color-border); }
+.insight-list li:last-child { border-bottom: 0; }
+h1, h2, h3, h4, h5, h6 { color: var(--color-text); font-family: var(--font-family-display); font-weight: 700; margin: 0; }
+h1 { font-size: 1.75rem; }
+h2 { font-size: 1.4rem; }
+h3 { font-size: 1.1rem; }
+h5 { font-size: 1rem; }
+h6 { font-size: 0.95rem; }
+p { color: var(--color-text-muted); margin: 0; line-height: 1.5; }
+.small { font-size: 0.85rem; }

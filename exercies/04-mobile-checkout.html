@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 04 - VibeCart Checkout</title>
+    <link rel="stylesheet" href="../assets/css/exercises-showcase.css" />
+  </head>
+  <body class="page-body page-checkout">
+    <main class="page-shell page-shell--phone">
+      <header class="topbar">
+        <div class="brand-line">
+          <a class="brand-badge" href="index.html" aria-label="Back to exercise index">VC</a>
+          <div class="brand-meta">
+            <span class="eyebrow">Exercise 04 / Mobile Checkout</span>
+            <h1 class="brand-title">Fast checkout for a youthful order flow</h1>
+            <span class="brand-subtitle">A streamlined purchase UI with a clear total and mobile-first actions</span>
+          </div>
+        </div>
+        <div class="topbar-actions">
+          <a class="ghost-chip" href="03-web-analytics.html">Back</a>
+          <span class="ghost-chip">Secure SSL</span>
+        </div>
+      </header>
+
+      <section class="hero-card">
+        <div class="hero-layout">
+          <div>
+            <span class="eyebrow">Checkout one-hand</span>
+            <h2 class="display-title">Every step is split into clear blocks for fast reading and confident tapping.</h2>
+            <p class="body-copy">
+              Exercise 04 is refreshed for a youthful commerce flow: compact cards, product-style visuals,
+              readable delivery details, and payment methods presented as distinct option cards with icons.
+            </p>
+            <div class="button-row" style="margin-top: 1rem">
+              <button class="button" type="button">Place now</button>
+              <button class="button-ghost" type="button">Add coupon</button>
+            </div>
+          </div>
+
+          <div class="visual-panel" aria-hidden="true">
+            <div class="visual-orb"></div>
+            <div class="visual-tile" style="top: 1rem; left: 1rem">
+              <span>Express ship</span>
+              <strong>2h</strong>
+              <span>Available in-city</span>
+            </div>
+            <div class="visual-tile" style="bottom: 1rem; right: 1rem">
+              <span>Offer</span>
+              <strong>-50K</strong>
+              <span>For orders above 899K</span>
+            </div>
+            <span class="visual-badge">Ready to pay</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="checkout-layout" style="margin-top: 1rem">
+        <div style="display: grid; gap: 1rem">
+          <section class="section-card address-card">
+            <div class="section-header">
+              <div>
+                <span class="eyebrow">Delivery address</span>
+                <h2 class="section-title">Shipping address</h2>
+              </div>
+              <button class="button-ghost" type="button">Edit address</button>
+            </div>
+            <div class="checkout-row">
+              <div>
+                <strong>Ngoc Anh - 0901 123 456</strong>
+                <p class="summary-copy">123 Lake Street, Thao Dien, District 2, Ho Chi Minh City</p>
+              </div>
+              <span class="mini-tag">Default</span>
+            </div>
+            <div class="info-row">
+              <span class="ghost-chip">Delivery 10:00 - 12:00</span>
+              <span class="ghost-chip">Free in-city shipping</span>
+            </div>
+          </section>
+
+          <section class="section-card order-card">
+            <div class="section-header">
+              <div>
+                <span class="eyebrow">Items</span>
+                <h2 class="section-title">Items in cart</h2>
+              </div>
+              <span class="mini-tag">03 items</span>
+            </div>
+
+            <div class="order-list">
+              <article class="order-item">
+                <div class="thumb-art thumb-art--audio"></div>
+                <div>
+                  <h3 class="order-name">Aurora Pods</h3>
+                  <p class="order-meta">Coral color - Qty 1 - 12-month warranty</p>
+                </div>
+                <strong class="price">689K</strong>
+              </article>
+
+              <article class="order-item">
+                <div class="thumb-art thumb-art--stand"></div>
+                <div>
+                  <h3 class="order-name">Flex Phone Stand</h3>
+                  <p class="order-meta">Mint color - Qty 2 - Desk setup decor pack</p>
+                </div>
+                <strong class="price">238K</strong>
+              </article>
+            </div>
+          </section>
+
+          <section class="section-card payment-card">
+            <div class="section-header">
+              <div>
+                <span class="eyebrow">Payment method</span>
+                <h2 class="section-title">Choose how to pay</h2>
+              </div>
+            </div>
+            <form class="radio-group">
+              <label class="option-card">
+                <input type="radio" name="pay" checked />
+                <span class="icon-chip" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18"/></svg>
+                </span>
+                <span class="option-copy">
+                  <strong>Credit / debit card</strong>
+                  <span>Fast checkout with bank promotions applied automatically when available.</span>
+                </span>
+              </label>
+              <label class="option-card">
+                <input type="radio" name="pay" />
+                <span class="icon-chip" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M4 8h16v8H4z"/><path d="M8 8V6h8v2"/><path d="M7 12h2M11 12h6"/></svg>
+                </span>
+                <span class="option-copy">
+                  <strong>E-wallet</strong>
+                  <span>Ideal for younger shoppers who prefer a one-tap confirmation flow.</span>
+                </span>
+              </label>
+              <label class="option-card">
+                <input type="radio" name="pay" />
+                <span class="icon-chip" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><circle cx="9" cy="12" r="4"/><path d="M15 8h4v8h-4"/><path d="M5 8h1"/></svg>
+                </span>
+                <span class="option-copy">
+                  <strong>Cash on delivery</strong>
+                  <span>Keeps the experience flexible for lower-value orders and first-time buyers.</span>
+                </span>
+              </label>
+            </form>
+          </section>
+        </div>
+
+        <aside class="summary-card">
+          <div class="section-header">
+            <div>
+              <span class="eyebrow">Order summary</span>
+              <h2 class="section-title">Order summary</h2>
+            </div>
+          </div>
+          <p class="body-copy">
+            The summary block is separated so users can see the total, discount, and main CTA immediately on both mobile and larger screens.
+          </p>
+          <div class="summary-list">
+            <div class="summary-row">
+              <strong>Subtotal</strong>
+              <strong>927K</strong>
+            </div>
+            <div class="summary-row">
+              <strong>Discount</strong>
+              <strong>-50K</strong>
+            </div>
+            <div class="summary-row">
+              <strong>Shipping</strong>
+              <strong>0K</strong>
+            </div>
+            <div class="summary-row summary-total">
+              <strong>Total payment</strong>
+              <strong class="price">877K</strong>
+            </div>
+          </div>
+          <div class="button-row" style="margin-top: 1rem">
+            <button class="button" type="button">Place order</button>
+            <button class="button-ghost" type="button">Save cart</button>
+          </div>
+          <div class="info-row" style="margin-top: 0.75rem">
+            <span class="ghost-chip">7-day returns</span>
+            <span class="ghost-chip">Support 1900 1888</span>
+          </div>
+        </aside>
+      </section>
+    </main>
+  </body>
+</html>

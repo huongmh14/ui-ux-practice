@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="68" y1="30" x2="570" y2="392" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E4FFFB"/>
+      <stop offset=".52" stop-color="#F5FFFB"/>
+      <stop offset="1" stop-color="#EEF4FF"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="104" y1="78" x2="540" y2="342" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity=".96"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity=".74"/>
+    </linearGradient>
+    <linearGradient id="avatar" x1="224" y1="102" x2="398" y2="276" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#19B8A8"/>
+      <stop offset="1" stop-color="#5F86FF"/>
+    </linearGradient>
+    <linearGradient id="star" x1="474" y1="116" x2="520" y2="164" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD166"/>
+      <stop offset="1" stop-color="#FFB860"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="420" rx="40" fill="url(#bg)"/>
+  <circle cx="112" cy="84" r="54" fill="#fff" fill-opacity=".7"/>
+  <circle cx="538" cy="328" r="74" fill="#5F86FF" fill-opacity=".08"/>
+  <rect x="94" y="72" width="452" height="284" rx="34" fill="url(#panel)" stroke="#fff" stroke-opacity=".76"/>
+  <rect x="118" y="100" width="200" height="228" rx="28" fill="#F3FFFB"/>
+  <rect x="336" y="100" width="184" height="90" rx="24" fill="#F7FAFF"/>
+  <rect x="336" y="206" width="184" height="122" rx="24" fill="#FFFFFF"/>
+  <circle cx="218" cy="166" r="58" fill="url(#avatar)"/>
+  <circle cx="218" cy="152" r="24" fill="#fff" fill-opacity=".86"/>
+  <path d="M182 210c0-24.301 19.699-44 44-44h0c24.301 0 44 19.699 44 44v8h-88v-8Z" fill="#fff" fill-opacity=".86"/>
+  <rect x="152" y="248" width="132" height="14" rx="7" fill="#D7FBF6"/>
+  <rect x="166" y="274" width="104" height="14" rx="7" fill="#E7FFFB"/>
+  <path d="m490 141-12.549 6.597 2.397-13.96-10.153-9.9 14.026-2.038L490 109l6.279 12.699 14.026 2.038-10.153 9.9 2.397 13.96L490 141Z" fill="url(#star)"/>
+  <rect x="360" y="122" width="92" height="12" rx="6" fill="#DEE8FF"/>
+  <rect x="360" y="144" width="64" height="12" rx="6" fill="#EEF3FF"/>
+  <rect x="360" y="226" width="118" height="16" rx="8" fill="#E4FFFB"/>
+  <rect x="360" y="254" width="144" height="16" rx="8" fill="#EDF5FF"/>
+  <rect x="360" y="282" width="126" height="16" rx="8" fill="#F5FAFF"/>
+</svg>

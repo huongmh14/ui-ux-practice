@@ -1,0 +1,70 @@
+/* Exercise showcase: index page summary cards */
+
+.index-hero {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.index-note {
+  max-width: var(--max-reading);
+}
+
+.index-kpis {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.index-kpi {
+  position: relative;
+  overflow: hidden;
+  padding: 1rem 1.05rem;
+  border-radius: 1rem;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.index-kpi::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 0.35rem;
+  background: linear-gradient(180deg, var(--brand), var(--brand-3));
+}
+
+.index-kpi strong {
+  display: block;
+  margin-top: 0.3rem;
+  padding-left: 0.15rem;
+  font-family: var(--font-heading);
+  font-size: 1.02rem;
+  line-height: 1.15;
+}
+
+.criteria-card {
+  display: grid;
+  gap: 0.35rem;
+  padding: 1rem;
+  border-radius: 1.15rem;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.76);
+}
+
+.criteria-card strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  line-height: 1.05;
+}
+
+.criteria-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+@media (min-width: 640px) {
+  .index-kpis {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

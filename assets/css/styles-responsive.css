@@ -1,0 +1,53 @@
+﻿/* Design lab: responsive rules */
+
+@media (max-width: 767px) {
+  :root {
+    --ribbon-height: 88px;
+  }
+
+  .top-ribbon {
+    min-height: var(--ribbon-height);
+  }
+
+  .top-ribbon-inner {
+    min-height: var(--ribbon-height);
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .top-ribbon-controls {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .top-ribbon-select {
+    min-width: 112px;
+  }
+
+  .app-panel {
+    margin-top: var(--ribbon-height);
+    min-height: calc(100vh - var(--ribbon-height));
+    padding-top: 0 !important;
+  }
+
+  .preview-shell {
+    padding: 1rem;
+  }
+
+  body[data-viewport="mobile"] .preview-canvas {
+    min-height: 680px;
+  }
+
+  .preview-canvas-form {
+    min-height: 620px;
+  }
+
+  body[data-viewport="tablet"] .preview-canvas,
+  body[data-viewport="web"] .preview-canvas {
+    width: 100%;
+    min-height: 620px;
+  }
+}

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result 04 - Mobile Checkout Demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="04-demo-style.css" />
+  </head>
+  <body data-theme="hig" data-viewport="mobile">
+    <main class="container-fluid px-3 py-3" style="max-width: 430px">
+      <section class="content-card p-3">
+        <header class="d-flex align-items-center justify-content-between mb-3">
+          <h1>Checkout</h1>
+          <a href="#" class="link-brand small">Back</a>
+        </header>
+
+        <section class="content-card p-3 d-flex align-items-center justify-content-between mb-3">
+          <div>
+            <h2 class="h6">Delivery Address</h2>
+            <p class="small mb-0">123 Lake Street, District 2</p>
+          </div>
+          <button class="btn btn-outline-brand btn-sm">Change</button>
+        </section>
+
+        <section class="content-card p-3 mb-3">
+          <h2 class="h6 mb-2">Items</h2>
+          <article class="d-flex align-items-center justify-content-between mb-2">
+            <div>
+              <h3 class="h6 mb-0">Wireless Headphones</h3>
+              <p class="small mb-0">Qty: 1</p>
+            </div>
+            <strong>$79</strong>
+          </article>
+          <article class="d-flex align-items-center justify-content-between">
+            <div>
+              <h3 class="h6 mb-0">Phone Stand</h3>
+              <p class="small mb-0">Qty: 2</p>
+            </div>
+            <strong>$24</strong>
+          </article>
+        </section>
+
+        <section class="content-card p-3 mb-3">
+          <h2 class="h6 mb-2">Payment Method</h2>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="pay" id="pay1" checked />
+            <label class="form-check-label" for="pay1">Credit Card</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="pay" id="pay2" />
+            <label class="form-check-label" for="pay2">E-Wallet</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="pay" id="pay3" />
+            <label class="form-check-label" for="pay3">Cash on Delivery</label>
+          </div>
+        </section>
+
+        <footer class="content-card p-3 d-flex align-items-center justify-content-between" style="border-left: 4px solid var(--brand)">
+          <strong>Total: $103</strong>
+          <button class="btn btn-brand btn-sm">Place Order</button>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>

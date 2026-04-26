@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 1 - Youthful UI Showcase</title>
+    <link rel="stylesheet" href="../assets/css/exercises-showcase.css" />
+  </head>
+  <body class="page-body page-index">
+    <main class="page-shell">
+      <header class="topbar">
+        <div class="brand-line">
+          <a class="brand-badge" href="index.html" aria-label="Exercise index">UI</a>
+          <div class="brand-meta">
+            <span class="eyebrow">Exercise 1 / Showcase</span>
+            <h1 class="brand-title">Decorated exercise set in a youthful theme</h1>
+            <span class="brand-subtitle">Referenced from the results folder and rebuilt in responsive HTML/CSS for mobile, tablet, and web</span>
+          </div>
+        </div>
+        <div class="topbar-actions">
+          <span class="ghost-chip">Theme 3.1 / Youthful</span>
+          <span class="ghost-chip">5 exercises / 1 visual system</span>
+        </div>
+      </header>
+
+      <section class="hero-card index-hero">
+        <span class="eyebrow">Review-ready direction</span>
+        <h2 class="display-title">A calmer review surface that lets judges inspect one exercise at a time.</h2>
+        <p class="body-copy index-note">
+          The youthful visual language is still intact, but the showcase now prioritizes clarity over decoration.
+          The main page is simplified into a review flow: pick one screen, switch the shell size, inspect it, then move on.
+        </p>
+        <div class="index-kpis">
+          <div class="index-kpi">
+            <span class="stat-label">Review flow</span>
+            <strong>One screen at a time</strong>
+          </div>
+          <div class="index-kpi">
+            <span class="stat-label">Visual system</span>
+            <strong>Same gradients, glass, and SVG effects</strong>
+          </div>
+          <div class="index-kpi">
+            <span class="stat-label">Responsive check</span>
+            <strong>Mobile, tablet, and web shells</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="review-layout">
+        <aside class="review-sidebar">
+          <section class="section-card review-group">
+            <div class="section-header">
+              <div>
+                <span class="eyebrow">Exercises</span>
+                <h2 class="section-title">Choose a screen</h2>
+              </div>
+            </div>
+            <div class="review-screen-list">
+              <button class="review-screen-button is-active" type="button" data-review-source="01-mobile-home.html" data-review-label="Exercise 01 / Mobile Home" data-review-default-viewport="mobile" aria-pressed="true">
+                <span class="review-screen-code">Exercise 01</span>
+                <strong>Mobile Home</strong>
+                <span>Young shopping landing screen</span>
+              </button>
+              <button class="review-screen-button" type="button" data-review-source="02-tablet-learning-dashboard.html" data-review-label="Exercise 02 / Tablet Dashboard" data-review-default-viewport="tablet" aria-pressed="false">
+                <span class="review-screen-code">Exercise 02</span>
+                <strong>Tablet Dashboard</strong>
+                <span>Seller learning dashboard</span>
+              </button>
+              <button class="review-screen-button" type="button" data-review-source="03-web-analytics.html" data-review-label="Exercise 03 / Web Analytics" data-review-default-viewport="web" aria-pressed="false">
+                <span class="review-screen-code">Exercise 03</span>
+                <strong>Web Analytics</strong>
+                <span>Commerce performance workspace</span>
+              </button>
+              <button class="review-screen-button" type="button" data-review-source="04-mobile-checkout.html" data-review-label="Exercise 04 / Mobile Checkout" data-review-default-viewport="mobile" aria-pressed="false">
+                <span class="review-screen-code">Exercise 04</span>
+                <strong>Mobile Checkout</strong>
+                <span>Fast one-hand payment flow</span>
+              </button>
+              <button class="review-screen-button" type="button" data-review-source="05-form-profile-settings.html" data-review-label="Exercise 05 / Profile Settings" data-review-default-viewport="web" aria-pressed="false">
+                <span class="review-screen-code">Exercise 05</span>
+                <strong>Profile Settings</strong>
+                <span>Responsive seller form layout</span>
+              </button>
+            </div>
+          </section>
+
+          <section class="section-card review-group">
+            <div class="section-header">
+              <div>
+                <span class="eyebrow">Reference labs</span>
+                <h2 class="section-title">Open the original labs</h2>
+              </div>
+            </div>
+            <div class="review-screen-list">
+              <button class="review-screen-button review-screen-button--soft" type="button" data-review-source="../index.html" data-review-label="Design Language Lab" data-review-default-viewport="web" aria-pressed="false">
+                <span class="review-screen-code">Reference</span>
+                <strong>Design Language Lab</strong>
+                <span>Original theme and viewport playground</span>
+              </button>
+              <button class="review-screen-button review-screen-button--soft" type="button" data-review-source="../form-controls.html" data-review-label="Form Controls Lab" data-review-default-viewport="web" aria-pressed="false">
+                <span class="review-screen-code">Reference</span>
+                <strong>Form Controls Lab</strong>
+                <span>Original form-control comparison screen</span>
+              </button>
+            </div>
+          </section>
+
+          <section class="section-card review-group">
+            <div class="section-header">
+              <div>
+                <span class="eyebrow">Judge checklist</span>
+                <h2 class="section-title">What to inspect quickly</h2>
+              </div>
+            </div>
+            <ul class="review-note-list">
+              <li>Check hierarchy, spacing, and CTA visibility before checking decoration.</li>
+              <li>Switch viewport shell to see whether the same screen still reads clearly.</li>
+              <li>Use the standalone link if you want a full-page view for closer inspection.</li>
+            </ul>
+          </section>
+        </aside>
+
+        <section class="section-card review-main review-studio">
+          <div class="section-header">
+            <div>
+              <span class="eyebrow">Active preview</span>
+              <h2 class="section-title">Review the selected screen in a cleaner viewport shell.</h2>
+            </div>
+            <div class="chip-row">
+              <span id="reviewScreenBadge" class="ghost-chip">Exercise 01 / Mobile Home</span>
+              <span id="reviewViewportBadge" class="ghost-chip">Mobile</span>
+            </div>
+          </div>
+          <div class="review-toolbar">
+            <label class="field" for="reviewViewportSelect">
+              Viewport shell
+              <select class="select" id="reviewViewportSelect">
+                <option value="mobile" selected>Mobile</option>
+                <option value="tablet">Tablet</option>
+                <option value="web">Web</option>
+              </select>
+            </label>
+            <div class="review-actions">
+              <a id="reviewOpenLink" class="button" href="01-mobile-home.html" target="_blank" rel="noreferrer">Open standalone</a>
+            </div>
+          </div>
+          <div class="review-shell">
+            <div class="review-status">
+              <div class="chip-row">
+                <span class="mini-tag">Focused reviewer mode</span>
+                <span class="ghost-chip">Effects preserved, layout simplified</span>
+              </div>
+            </div>
+            <div id="reviewViewport" class="review-viewport" data-review-viewport="mobile">
+              <iframe id="reviewFrame" src="01-mobile-home.html" title="Exercise review preview" loading="lazy"></iframe>
+            </div>
+          </div>
+          <div class="review-helper">
+            <article class="criteria-card">
+              <strong>One preview focus</strong>
+              <p>The page no longer competes with a large gallery of cards. The selected screen is now the main priority.</p>
+            </article>
+            <article class="criteria-card">
+              <strong>Less visual noise</strong>
+              <p>Large thumbnails and repeated summaries were removed so the judge can switch, inspect, and move on faster.</p>
+            </article>
+          </div>
+        </section>
+      </section>
+    </main>
+    <script src="../assets/js/exercises-review.js"></script>
+  </body>
+</html>

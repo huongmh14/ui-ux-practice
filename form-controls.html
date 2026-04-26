@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI/UX Form Controls Lab</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-theme="hig" data-viewport="mobile">
+    <header class="top-ribbon">
+      <div class="container-fluid px-3 px-md-4 px-xl-5">
+        <div class="top-ribbon-inner">
+          <p class="top-ribbon-text mb-0">Form & Controls Playground</p>
+
+          <div class="top-ribbon-controls">
+            <div>
+              <label for="themeSelect" class="form-label top-ribbon-label mb-1">Theme</label>
+              <select id="themeSelect" class="form-select form-select-sm top-ribbon-select">
+                <option value="hig">HIG</option>
+                <option value="material">Material</option>
+              </select>
+            </div>
+            <div>
+              <label for="viewportSelect" class="form-label top-ribbon-label mb-1">Viewport</label>
+              <select id="viewportSelect" class="form-select form-select-sm top-ribbon-select">
+                <option value="mobile">Mobile</option>
+                <option value="tablet">Tablet</option>
+                <option value="web">Web</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container-fluid px-3 px-md-4 px-xl-5 pb-4 pb-md-5 app-panel">
+      <section class="hero mb-4 mb-md-5">
+        <div class="row g-4 align-items-end">
+          <div class="col-12 col-lg-10 col-xl-9">
+            <h1 class="display-title mb-3">Form and Control patterns for HIG vs Material.</h1>
+            <p class="lead-copy mb-0">
+              Compare field density, shape language, interaction emphasis, and component hierarchy under each design
+              system.
+            </p>
+            <div class="d-flex flex-wrap gap-2 mt-3">
+              <a class="btn btn-outline-brand" href="index.html">Back to Main Screen</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="row g-4">
+        <div class="col-12 col-xl-8">
+          <div class="preview-shell p-3 p-md-4 p-xl-5">
+            <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-3">
+              <h2 class="h5 mb-0">Form & Controls Screen</h2>
+              <div class="d-flex gap-2">
+                <span id="themeBadge" class="badge text-bg-dark">HIG</span>
+                <span id="viewportBadge" class="badge badge-soft">Mobile</span>
+              </div>
+            </div>
+
+            <div class="preview-canvas preview-canvas-form">
+              <header class="screen-header px-3 px-md-4 py-3">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <p class="tiny-label mb-1">Account Setup</p>
+                    <h3 class="screen-title mb-0">Profile Preferences</h3>
+                  </div>
+                  <button class="btn btn-sm btn-outline-brand">Reset</button>
+                </div>
+              </header>
+
+              <div class="px-3 px-md-4 py-3">
+                <div class="accent-banner mb-3">
+                  <span class="accent-dot" aria-hidden="true"></span>
+                  Accent demonstration: alerts and highlighted controls use the accent token.
+                </div>
+
+                <form class="demo-form" action="#" method="post">
+                  <div class="row g-3">
+                    <div class="col-12 col-md-6">
+                      <label for="fullName" class="form-label">Full name</label>
+                      <input id="fullName" type="text" class="form-control" placeholder="Alex Johnson" />
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <label for="emailAddress" class="form-label">Email</label>
+                      <input id="emailAddress" type="email" class="form-control" placeholder="alex@company.com" />
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                      <label for="country" class="form-label">Country</label>
+                      <select id="country" class="form-select">
+                        <option selected>Japan</option>
+                        <option>Singapore</option>
+                        <option>Vietnam</option>
+                      </select>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <label for="travelStyle" class="form-label">Travel style</label>
+                      <select id="travelStyle" class="form-select">
+                        <option selected>Balanced</option>
+                        <option>Minimal</option>
+                        <option>Luxury</option>
+                      </select>
+                    </div>
+
+                    <div class="col-12">
+                      <label class="form-label d-block">Notification level</label>
+                      <div class="d-flex flex-wrap gap-2">
+                        <input type="radio" class="btn-check" name="notifyLevel" id="notifyLow" autocomplete="off" />
+                        <label class="btn btn-segment" for="notifyLow">Low</label>
+
+                        <input type="radio" class="btn-check" name="notifyLevel" id="notifyNormal" autocomplete="off" checked />
+                        <label class="btn btn-segment" for="notifyNormal">Normal</label>
+
+                        <input type="radio" class="btn-check" name="notifyLevel" id="notifyHigh" autocomplete="off" />
+                        <label class="btn btn-segment" for="notifyHigh">High</label>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                      <label for="comfortRange" class="form-label">Comfort level</label>
+                      <input id="comfortRange" type="range" class="form-range" min="1" max="10" value="6" />
+                    </div>
+                    <div class="col-12 col-md-6 d-flex align-items-end">
+                      <div class="form-check form-switch mb-2">
+                        <input class="form-check-input" type="checkbox" role="switch" id="offlineMode" checked />
+                        <label class="form-check-label" for="offlineMode">Enable offline mode</label>
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <label for="notes" class="form-label">Notes</label>
+                      <textarea id="notes" class="form-control" rows="3" placeholder="Special requests, dietary preferences, accessibility needs..."></textarea>
+                    </div>
+
+                    <div class="col-12 d-flex flex-wrap gap-2 pt-1">
+                      <button type="submit" class="btn btn-brand">Save Preferences</button>
+                      <button type="button" class="btn btn-outline-brand">Cancel</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-xl-4">
+          <div class="preview-shell p-3 p-md-4 h-100">
+            <h2 class="h5 mb-3">Form UX Notes</h2>
+            <ul class="insight-list mb-4">
+              <li>HIG mode keeps softer corners and lighter form density.</li>
+              <li>Material mode pushes stronger boundaries and denser controls.</li>
+              <li>Use viewport switcher to validate reachability and spacing across devices.</li>
+            </ul>
+
+            <div class="content-card p-3 p-md-4">
+              <h3 class="h6 mb-3">Review Checklist</h3>
+              <p class="mb-2">Check focus visibility, control grouping, and action hierarchy before handoff.</p>
+              <p class="mb-0">All controls in this screen use Bootstrap components themed by CSS variables.</p>
+            </div>
+
+            <div class="accent-showcase mt-3">
+              <p class="tiny-label mb-2">Accent Color Demo</p>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="accent-chip is-solid">Solid Accent</span>
+                <span class="accent-chip is-soft">Soft Accent</span>
+                <span class="accent-chip is-outline">Outline Accent</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/app.jquery.js"></script>
+  </body>
+</html>

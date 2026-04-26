@@ -1,0 +1,255 @@
+﻿/* Exercise showcase: foundation, globals, and typography */
+
+@font-face {
+  font-family: "Space Grotesk Local";
+  src: url("../fonts/SpaceGrotesk-Variable.ttf") format("truetype");
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito Sans Local";
+  src: url("../fonts/NunitoSans-Variable.ttf") format("truetype");
+  font-weight: 200 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope Local";
+  src: url("../fonts/Manrope-Variable.ttf") format("truetype");
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-heading: "Space Grotesk Local", "Space Grotesk", "Segoe UI", sans-serif;
+  --font-body: "Nunito Sans Local", "Nunito Sans", "Segoe UI", sans-serif;
+  --font-alt: "Manrope Local", "Manrope", "Segoe UI", sans-serif;
+
+  --bg: #fff8f2;
+  --bg-soft: #fff1e6;
+  --surface: rgba(255, 255, 255, 0.82);
+  --surface-strong: #fffdfb;
+  --surface-tint: #fff4ee;
+  --text: #23150e;
+  --muted: #796459;
+  --line: rgba(59, 32, 17, 0.12);
+
+  --brand: #ff6b57;
+  --brand-2: #ff9a59;
+  --brand-3: #15b8a6;
+  --brand-4: #17375f;
+  --brand-5: #ffd166;
+
+  --success: #19995e;
+  --warning: #f0a23d;
+  --danger: #c94852;
+
+  --shadow-lg: 0 28px 70px rgba(255, 122, 84, 0.16);
+  --shadow-md: 0 18px 40px rgba(34, 17, 10, 0.1);
+
+  --radius-xl: 32px;
+  --radius-lg: 24px;
+  --radius-md: 18px;
+  --radius-sm: 12px;
+
+  --space-1: 0.5rem;
+  --space-2: 0.75rem;
+  --space-3: 1rem;
+  --space-4: 1.25rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 2.5rem;
+  --space-8: 3rem;
+
+  --max-page: 1180px;
+  --max-reading: 720px;
+
+  --page-bg-top: #fffaf6;
+  --page-bg-mid: var(--bg);
+  --page-bg-bottom: var(--bg-soft);
+  --page-glow-a: rgba(255, 153, 93, 0.22);
+  --page-glow-b: rgba(21, 184, 166, 0.18);
+  --page-bubble-a: rgba(255, 107, 87, 0.16);
+  --page-bubble-b: rgba(21, 184, 166, 0.12);
+  --page-shadow: 0 26px 60px rgba(34, 17, 10, 0.12);
+  --hero-art: none;
+  --overview-art: none;
+  --analytics-art: none;
+  --profile-art: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-body);
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, var(--page-glow-a), transparent 28%),
+    radial-gradient(circle at top right, var(--page-glow-b), transparent 22%),
+    linear-gradient(180deg, var(--page-bg-top) 0%, var(--page-bg-mid) 54%, var(--page-bg-bottom) 100%);
+}
+
+body.page-body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+body.page-body::before,
+body.page-body::after {
+  content: "";
+  position: fixed;
+  z-index: 0;
+  pointer-events: none;
+  filter: blur(18px);
+}
+
+body.page-body::before {
+  inset: auto auto -4rem -6rem;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 50%;
+  background: var(--page-bubble-a);
+}
+
+body.page-body::after {
+  inset: 8rem -5rem auto auto;
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  background: var(--page-bubble-b);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+img,
+svg,
+iframe {
+  display: block;
+  max-width: 100%;
+}
+
+.page-shell {
+  position: relative;
+  z-index: 1;
+  width: min(calc(100% - 1.5rem), var(--max-page));
+  margin: 0 auto;
+  padding: 1rem 0 2.5rem;
+}
+
+.page-shell--phone {
+  width: min(calc(100% - 1rem), 1040px);
+}
+
+.glass-panel,
+.section-card,
+.hero-card,
+.metric-card,
+.product-card,
+.course-card,
+.table-card,
+.form-panel,
+.summary-card,
+.side-card,
+.nav-shell {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  backdrop-filter: blur(14px);
+  box-shadow: var(--page-shadow);
+}
+
+.section-card,
+.hero-card,
+.metric-card,
+.product-card,
+.course-card,
+.table-card,
+.form-panel,
+.summary-card,
+.side-card {
+  border-radius: var(--radius-lg);
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.eyebrow::before {
+  content: "";
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--brand), var(--brand-3));
+}
+
+.display-title,
+.section-title,
+.brand-title {
+  margin: 0;
+  font-family: var(--font-heading);
+  line-height: 0.96;
+  letter-spacing: -0.04em;
+}
+
+.display-title {
+  font-size: clamp(2.2rem, 6vw, 4.6rem);
+}
+
+.section-title {
+  font-size: clamp(1.2rem, 2.8vw, 2rem);
+}
+
+.body-copy,
+.muted-text {
+  margin: 0;
+  line-height: 1.65;
+  color: var(--muted);
+}
+
+.muted-text strong,
+.body-copy strong {
+  color: var(--text);
+}

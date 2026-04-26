@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="64" y1="30" x2="566" y2="390" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE6D8"/>
+      <stop offset=".48" stop-color="#FFF7F2"/>
+      <stop offset="1" stop-color="#FFF0F8"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="102" y1="80" x2="542" y2="340" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity=".96"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity=".76"/>
+    </linearGradient>
+    <linearGradient id="bag" x1="238" y1="118" x2="388" y2="296" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF7C4D"/>
+      <stop offset="1" stop-color="#FF5FA2"/>
+    </linearGradient>
+    <linearGradient id="card" x1="400" y1="154" x2="510" y2="226" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#16C8B2"/>
+      <stop offset="1" stop-color="#1485D8"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="420" rx="40" fill="url(#bg)"/>
+  <circle cx="106" cy="84" r="54" fill="#fff" fill-opacity=".7"/>
+  <circle cx="540" cy="330" r="76" fill="#FF5FA2" fill-opacity=".08"/>
+  <rect x="92" y="72" width="456" height="284" rx="34" fill="url(#panel)" stroke="#fff" stroke-opacity=".78"/>
+  <rect x="116" y="102" width="168" height="40" rx="20" fill="#FFF2E8"/>
+  <rect x="304" y="102" width="96" height="40" rx="20" fill="#FFF4FA"/>
+  <rect x="420" y="102" width="96" height="40" rx="20" fill="#F0FFFB"/>
+  <path d="M238 150c0-17.673 14.327-32 32-32h54c17.673 0 32 14.327 32 32v16h18c13.255 0 24 10.745 24 24v92c0 13.255-10.745 24-24 24H220c-13.255 0-24-10.745-24-24v-92c0-13.255 10.745-24 24-24h18v-16Z" fill="url(#bag)"/>
+  <path d="M274 154c0-10.493 8.507-19 19-19h8c10.493 0 19 8.507 19 19v13h-46v-13Z" stroke="#fff" stroke-width="12" stroke-linecap="round"/>
+  <rect x="228" y="194" width="140" height="84" rx="20" fill="#fff" fill-opacity=".18"/>
+  <rect x="398" y="156" width="122" height="76" rx="24" fill="url(#card)"/>
+  <rect x="420" y="176" width="54" height="10" rx="5" fill="#fff" fill-opacity=".76"/>
+  <rect x="420" y="194" width="72" height="10" rx="5" fill="#fff" fill-opacity=".44"/>
+  <rect x="398" y="246" width="122" height="64" rx="24" fill="#FFF4FA"/>
+  <rect x="420" y="266" width="60" height="10" rx="5" fill="#FFD5E8"/>
+  <rect x="420" y="284" width="80" height="10" rx="5" fill="#FFE5F0"/>
+</svg>
