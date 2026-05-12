@@ -1,4 +1,4 @@
-﻿/* Exercise showcase: screen components and form patterns */
+/* Exercise showcase: screen components and form patterns */
 
 .hero-layout,
 .checkout-layout,
@@ -25,7 +25,7 @@
   background-image:
     var(--hero-art),
     linear-gradient(140deg, rgba(255, 255, 255, 0.58), rgba(255, 255, 255, 0.08)),
-    linear-gradient(160deg, rgba(255, 107, 87, 0.78), rgba(21, 184, 166, 0.68));
+    linear-gradient(160deg, rgba(37, 99, 235, 0.78), rgba(6, 182, 212, 0.68));
   background-position:
     center bottom,
     0 0,
@@ -121,7 +121,7 @@
   margin-top: 0.35rem;
   border-radius: 999px;
   background: linear-gradient(135deg, var(--brand), var(--brand-3));
-  box-shadow: 0 0 0 0.35rem rgba(255, 107, 87, 0.14);
+  box-shadow: 0 0 0 0.35rem rgba(37, 99, 235, 0.14);
 }
 
 .task-copy strong {
@@ -160,7 +160,7 @@
   border-radius: 0.95rem;
   background: linear-gradient(135deg, var(--brand), var(--brand-2));
   color: #fff;
-  box-shadow: 0 12px 22px rgba(255, 107, 87, 0.18);
+  box-shadow: 0 12px 22px rgba(37, 99, 235, 0.18);
 }
 
 .icon-chip svg {
@@ -218,7 +218,7 @@
 }
 
 .nav-item.is-active {
-  background: linear-gradient(135deg, rgba(255, 107, 87, 0.14), rgba(255, 154, 89, 0.2));
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.14), rgba(255, 154, 89, 0.2));
   color: var(--text);
 }
 
@@ -267,7 +267,7 @@
   border: 1px solid rgba(255, 255, 255, 0.36);
   background:
     radial-gradient(circle at top right, rgba(255, 255, 255, 0.82), transparent 32%),
-    linear-gradient(155deg, #ffd8bc, #ffece0 50%, #f6fff8 100%);
+    linear-gradient(155deg, #dbeafe, #eff6ff 50%, #f0fdfa 100%);
 }
 
 .product-media::before,
@@ -309,7 +309,7 @@
   width: 6.2rem;
   height: 3.8rem;
   border-radius: 999px;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.82), rgba(255, 107, 87, 0.24));
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.82), rgba(37, 99, 235, 0.24));
   transform: rotate(-12deg);
 }
 
@@ -317,7 +317,7 @@
   width: 4.1rem;
   height: 7rem;
   border-radius: 1.1rem;
-  background: linear-gradient(180deg, #ff8a74, #ff5a7d);
+  background: linear-gradient(180deg, #3b82f6, #6366f1);
 }
 
 .product-media--sneaker::before {
@@ -368,7 +368,7 @@
   background-image:
     var(--overview-art),
     radial-gradient(circle at top left, rgba(255, 255, 255, 0.72), transparent 42%),
-    linear-gradient(145deg, rgba(21, 184, 166, 0.9), rgba(23, 55, 95, 0.92));
+    linear-gradient(145deg, rgba(37, 99, 235, 0.9), rgba(15, 23, 42, 0.92));
   background-position:
     right 1rem bottom 0.5rem,
     0 0,
@@ -568,7 +568,7 @@
   width: 100%;
   height: var(--bar-size);
   border-radius: 1rem 1rem 0.7rem 0.7rem;
-  background: linear-gradient(180deg, rgba(255, 107, 87, 0.28), rgba(255, 107, 87, 0.95));
+  background: linear-gradient(180deg, rgba(37, 99, 235, 0.28), rgba(37, 99, 235, 0.95));
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.55);
 }
 
@@ -653,7 +653,7 @@
   min-height: 5.5rem;
   background:
     radial-gradient(circle at top right, rgba(255, 255, 255, 0.9), transparent 30%),
-    linear-gradient(145deg, #ffd3bf, #fff0e5 55%, #f1fffb 100%);
+    linear-gradient(145deg, #dbeafe, #eff6ff 55%, #f0fdfa 100%);
 }
 
 .thumb-art--audio::before {
@@ -724,7 +724,7 @@
   background-image:
     var(--profile-art),
     radial-gradient(circle at top left, rgba(255, 255, 255, 0.78), transparent 40%),
-    linear-gradient(145deg, rgba(255, 154, 89, 0.8), rgba(21, 184, 166, 0.78));
+    linear-gradient(145deg, rgba(37, 99, 235, 0.8), rgba(99, 102, 241, 0.78));
   background-position:
     center bottom,
     0 0,
@@ -854,3 +854,4 @@
 .security-list .option-copy {
   flex: 1 1 14rem;
 }
+

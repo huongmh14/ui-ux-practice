@@ -1,104 +1,99 @@
-﻿/* Exercise showcase: page themes and responsive rules */
+/* Exercise showcase: page themes and responsive rules */
 
 .page-home {
-  --brand: #ff6b57;
-  --brand-2: #ff9a59;
-  --brand-3: #15b8a6;
-  --brand-4: #17375f;
-  --brand-5: #ffd166;
-  --page-bg-top: #fffaf6;
-  --page-bg-mid: #fff5ec;
-  --page-bg-bottom: #fff0df;
-  --page-glow-a: rgba(255, 143, 103, 0.28);
-  --page-glow-b: rgba(21, 184, 166, 0.18);
-  --page-bubble-a: rgba(255, 107, 87, 0.18);
-  --page-bubble-b: rgba(21, 184, 166, 0.14);
-  --page-shadow: 0 26px 65px rgba(255, 111, 79, 0.16);
-  --hero-art: url("../images/youth-shopping.svg");
+  --brand: #2563eb;
+  --brand-2: #3b82f6;
+  --brand-3: #06b6d4;
+  --brand-4: #1e293b;
+  --brand-5: #6366f1;
+  --page-bg-top: #f8fbff;
+  --page-bg-mid: #f0f7ff;
+  --page-bg-bottom: #e0efff;
+  --page-glow-a: rgba(37, 99, 235, 0.2);
+  --page-glow-b: rgba(6, 182, 212, 0.15);
+  --page-bubble-a: rgba(37, 99, 235, 0.2);
+  --page-bubble-b: rgba(6, 182, 212, 0.15);
+  --page-shadow: 0 26px 65px rgba(37, 99, 235, 0.2);
 }
 
 .page-academy {
-  --brand: #11b6b3;
-  --brand-2: #167adf;
-  --brand-3: #ffd166;
-  --brand-4: #17375f;
-  --brand-5: #ff8f59;
-  --page-bg-top: #f3fffd;
-  --page-bg-mid: #effaf8;
-  --page-bg-bottom: #e7f4ff;
-  --page-glow-a: rgba(17, 182, 179, 0.2);
-  --page-glow-b: rgba(22, 122, 223, 0.16);
-  --page-bubble-a: rgba(17, 182, 179, 0.14);
-  --page-bubble-b: rgba(22, 122, 223, 0.12);
-  --page-shadow: 0 26px 60px rgba(17, 76, 140, 0.14);
-  --overview-art: url("../images/youth-dashboard.svg");
+  --brand: #0d9488;
+  --brand-2: #06b6d4;
+  --brand-3: #3b82f6;
+  --brand-4: #1e293b;
+  --brand-5: #6366f1;
+  --page-bg-top: #f0fdfa;
+  --page-bg-mid: #ecfdf5;
+  --page-bg-bottom: #eff6ff;
+  --page-glow-a: rgba(13, 148, 136, 0.18);
+  --page-glow-b: rgba(6, 182, 212, 0.14);
+  --page-bubble-a: rgba(13, 148, 136, 0.18);
+  --page-bubble-b: rgba(6, 182, 212, 0.14);
+  --page-shadow: 0 26px 65px rgba(13, 148, 136, 0.18);
 }
 
 .page-analytics {
-  --brand: #4c62ff;
-  --brand-2: #10b4ff;
-  --brand-3: #18d2c1;
-  --brand-4: #17375f;
-  --brand-5: #ffd166;
-  --page-bg-top: #f7f9ff;
-  --page-bg-mid: #eff3ff;
-  --page-bg-bottom: #eefcff;
-  --page-glow-a: rgba(76, 98, 255, 0.18);
-  --page-glow-b: rgba(16, 180, 255, 0.16);
-  --page-bubble-a: rgba(76, 98, 255, 0.12);
-  --page-bubble-b: rgba(16, 180, 255, 0.12);
-  --page-shadow: 0 28px 66px rgba(38, 66, 170, 0.14);
-  --analytics-art: url("../images/youth-analytics.svg");
+  --brand: #4f46e5;
+  --brand-2: #2563eb;
+  --brand-3: #0891b2;
+  --brand-4: #1e293b;
+  --brand-5: #6366f1;
+  --page-bg-top: #f5f3ff;
+  --page-bg-mid: #eef2ff;
+  --page-bg-bottom: #ecfeff;
+  --page-glow-a: rgba(79, 70, 229, 0.16);
+  --page-glow-b: rgba(37, 99, 235, 0.14);
+  --page-bubble-a: rgba(79, 70, 229, 0.16);
+  --page-bubble-b: rgba(37, 99, 235, 0.14);
+  --page-shadow: 0 26px 65px rgba(79, 70, 229, 0.16);
 }
 
 .page-checkout {
-  --brand: #ff7c4d;
-  --brand-2: #ff5fa2;
-  --brand-3: #15b8a6;
-  --brand-4: #17375f;
-  --brand-5: #ffd166;
-  --page-bg-top: #fff9f4;
-  --page-bg-mid: #fff2ea;
-  --page-bg-bottom: #fff0f7;
-  --page-glow-a: rgba(255, 124, 77, 0.22);
-  --page-glow-b: rgba(255, 95, 162, 0.14);
-  --page-bubble-a: rgba(255, 124, 77, 0.18);
-  --page-bubble-b: rgba(255, 95, 162, 0.1);
-  --page-shadow: 0 26px 64px rgba(255, 124, 77, 0.15);
-  --hero-art: url("../images/youth-checkout.svg");
+  --brand: #7c3aed;
+  --brand-2: #2563eb;
+  --brand-3: #06b6d4;
+  --brand-4: #1e293b;
+  --brand-5: #6366f1;
+  --page-bg-top: #f5f3ff;
+  --page-bg-mid: #f0f7ff;
+  --page-bg-bottom: #ecfeff;
+  --page-glow-a: rgba(124, 58, 237, 0.18);
+  --page-glow-b: rgba(37, 99, 235, 0.12);
+  --page-bubble-a: rgba(124, 58, 237, 0.18);
+  --page-bubble-b: rgba(37, 99, 235, 0.12);
+  --page-shadow: 0 26px 65px rgba(124, 58, 237, 0.18);
 }
 
 .page-settings {
-  --brand: #19b8a8;
-  --brand-2: #5f86ff;
-  --brand-3: #ffb860;
-  --brand-4: #17375f;
-  --brand-5: #ffd166;
-  --page-bg-top: #f5fffd;
-  --page-bg-mid: #effcf8;
-  --page-bg-bottom: #f1f6ff;
-  --page-glow-a: rgba(25, 184, 168, 0.2);
-  --page-glow-b: rgba(95, 134, 255, 0.14);
-  --page-bubble-a: rgba(25, 184, 168, 0.14);
-  --page-bubble-b: rgba(95, 134, 255, 0.1);
-  --page-shadow: 0 26px 60px rgba(22, 94, 116, 0.14);
-  --profile-art: url("../images/youth-profile.svg");
+  --brand: #059669;
+  --brand-2: #2563eb;
+  --brand-3: #06b6d4;
+  --brand-4: #1e293b;
+  --brand-5: #6366f1;
+  --page-bg-top: #ecfdf5;
+  --page-bg-mid: #f0f9ff;
+  --page-bg-bottom: #eff6ff;
+  --page-glow-a: rgba(5, 150, 105, 0.18);
+  --page-glow-b: rgba(37, 99, 235, 0.12);
+  --page-bubble-a: rgba(5, 150, 105, 0.18);
+  --page-bubble-b: rgba(37, 99, 235, 0.12);
+  --page-shadow: 0 26px 65px rgba(5, 150, 105, 0.18);
 }
 
 .page-index {
-  --brand: #ff6b57;
-  --brand-2: #15b8a6;
-  --brand-3: #4c62ff;
-  --brand-4: #17375f;
-  --brand-5: #ffd166;
-  --page-bg-top: #fffaf6;
-  --page-bg-mid: #f9f7ff;
+  --brand: #2563eb;
+  --brand-2: #06b6d4;
+  --brand-3: #4f46e5;
+  --brand-4: #1e293b;
+  --brand-5: #6366f1;
+  --page-bg-top: #f8fbff;
+  --page-bg-mid: #f0f7ff;
   --page-bg-bottom: #eefcff;
-  --page-glow-a: rgba(255, 107, 87, 0.2);
-  --page-glow-b: rgba(76, 98, 255, 0.16);
-  --page-bubble-a: rgba(255, 107, 87, 0.14);
-  --page-bubble-b: rgba(76, 98, 255, 0.12);
-  --page-shadow: 0 28px 70px rgba(44, 39, 116, 0.12);
+  --page-glow-a: rgba(37, 99, 235, 0.2);
+  --page-glow-b: rgba(6, 182, 212, 0.16);
+  --page-bubble-a: rgba(37, 99, 235, 0.2);
+  --page-bubble-b: rgba(6, 182, 212, 0.16);
+  --page-shadow: 0 28px 70px rgba(37, 99, 235, 0.2);
 }
 
 .page-analytics .hero-card {
@@ -237,3 +232,6 @@
       0 0;
   }
 }
+
+
+

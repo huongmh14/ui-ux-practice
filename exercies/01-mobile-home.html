@@ -3,24 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exercise 01 - VibeCart Mobile Home</title>
+    <title>Exercise 01 - VibeCart RGB Blue</title>
     <link rel="stylesheet" href="../assets/css/exercises-showcase.css" />
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
   </head>
   <body class="page-body page-home">
-    <main class="page-shell page-shell--phone">
+    <main class="page-shell">
       <header class="topbar">
         <div class="brand-line">
-          <a class="brand-badge" href="index.html" aria-label="Back to exercise index">VC</a>
+          <a class="brand-badge" href="index.html" aria-label="Back to exercise index">
+            <i data-lucide="zap" style="width: 1.5rem; height: 1.5rem"></i>
+          </a>
           <div class="brand-meta">
-            <span class="eyebrow">Exercise 01 / Mobile Home</span>
+            <span class="eyebrow">Exercise 01 / RGB Blue</span>
             <h1 class="brand-title">VibeCart Home</h1>
-            <span class="brand-subtitle">A youthful shopping home that surfaces deals fast</span>
+            <span class="brand-subtitle">Fast, fluid, and electric shopping</span>
           </div>
         </div>
         <div class="topbar-actions">
-          <a class="ghost-chip" href="index.html">View all 5</a>
           <button class="icon-button" type="button" aria-label="Open cart">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8h12l-1 10H7L6 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+            <i data-lucide="shopping-bag"></i>
             <span class="sr-only">Cart</span>
           </button>
         </div>
@@ -29,57 +32,59 @@
       <section class="hero-card">
         <div class="hero-layout">
           <div>
-            <span class="eyebrow">Theme 3.1 / Youthful</span>
-            <h2 class="display-title">Hot drops in a compact interface that feels quick and playful.</h2>
+            <span class="eyebrow">Hot Drops</span>
+            <h2 class="display-title">Level up your style with Electric Blue.</h2>
             <p class="body-copy">
-              Exercise 01 is rebuilt as a Gen Z shopping home, using warm gradients, oversized cards,
-              layered visuals, and clear hierarchy for promotions, categories, and trending products.
+              Explore the latest Gen Z trends in a high-performance interface. 
+              Optimized for speed, style, and seamless browsing across all your devices.
             </p>
-            <div class="button-row" style="margin-top: 1rem">
-              <button class="button" type="button">Shop now</button>
-              <button class="button-ghost" type="button">View lookbook</button>
+            <div class="button-row" style="margin-top: 1.5rem">
+              <button class="button" type="button">
+                Shop the Drop <i data-lucide="arrow-right" style="margin-left: 0.5rem"></i>
+              </button>
+              <button class="button-ghost" type="button">Lookbook</button>
             </div>
-            <div class="stat-grid" style="margin-top: 1rem">
+            <div class="stat-grid" style="margin-top: 1.5rem">
               <div class="stat-pill">
-                <span class="stat-label">Live deal</span>
-                <p class="stat-value">12K</p>
-                <p class="stat-note">shoppers browsing tonight's flash sale</p>
+                <span class="stat-label">Live Now</span>
+                <p class="stat-value">24K</p>
+                <p class="stat-note">shoppers online</p>
               </div>
               <div class="stat-pill">
-                <span class="stat-label">Fast ship</span>
-                <p class="stat-value">2h</p>
-                <p class="stat-note">same-city delivery on orders under 499K</p>
+                <span class="stat-label">Fast Ship</span>
+                <p class="stat-value">90m</p>
+                <p class="stat-note">average delivery</p>
               </div>
             </div>
           </div>
 
           <div class="visual-panel" aria-hidden="true">
-            <div class="visual-orb"></div>
-            <div class="visual-ring"></div>
-            <div class="visual-tile" style="top: 1rem; left: 1rem">
-              <span>New drop</span>
-              <strong>08:30</strong>
-              <span>Beauty set pastel</span>
+            <div class="visual-orb" style="background: radial-gradient(circle at 35% 35%, rgba(37, 99, 235, 0.4), transparent 70%)"></div>
+            <div class="visual-ring" style="border-color: rgba(37, 99, 235, 0.2)"></div>
+            <div class="visual-tile" style="top: 1rem; left: 1rem; background: rgba(37, 99, 235, 0.15)">
+              <i data-lucide="sparkles" style="color: var(--brand-3)"></i>
+              <strong>New Era</strong>
+              <span>Pastel Tech Series</span>
             </div>
-            <div class="visual-tile" style="bottom: 1.2rem; left: 5rem">
-              <span>Voucher</span>
-              <strong>-35%</strong>
-              <span>For the 6 PM slot</span>
+            <div class="visual-tile" style="bottom: 1.2rem; right: 1rem; background: rgba(6, 182, 212, 0.15)">
+              <strong>-40%</strong>
+              <span>Weekend Flash</span>
             </div>
-            <span class="visual-badge">Fresh Pick</span>
+            <span class="visual-badge" style="background: var(--brand); color: #fff">Top Choice</span>
           </div>
         </div>
       </section>
 
       <section class="section-card" style="margin-top: 1rem">
         <div class="search-strip">
-          <span class="icon-chip" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="m20 20-4.2-4.2"/></svg>
+          <span class="icon-chip" style="background: var(--brand-3)">
+            <i data-lucide="search" style="width: 1.2rem; height: 1.2rem"></i>
           </span>
-          <div>
-            <strong>Search</strong>
-            <span>Headphones, lip tint, pastel sneakers, desk setup decor...</span>
+          <div style="flex: 1">
+            <strong style="display: block; font-size: 0.9rem">Quick Search</strong>
+            <span style="font-size: 0.85rem">Try "Mechanical Keyboards" or "Cyberpunk Decor"</span>
           </div>
+          <i data-lucide="mic" style="color: var(--muted)"></i>
         </div>
       </section>
 
@@ -87,54 +92,54 @@
         <section class="section-card">
           <div class="section-header">
             <div>
-              <span class="eyebrow">Quick categories</span>
-              <h2 class="section-title">Product groups trending right now</h2>
+              <span class="eyebrow">Explore</span>
+              <h2 class="section-title">Trending Vibes</h2>
             </div>
-            <span class="mini-tag">Updated 5 minutes ago</span>
+            <span class="mini-tag">Live Feed</span>
           </div>
 
           <div class="category-grid">
             <article class="category-card">
               <div class="icon-copy">
-                <span class="icon-chip" aria-hidden="true">
-                  <svg viewBox="0 0 24 24"><path d="M8 5h8l1 5H7l1-5Z"/><path d="M9 10h6v9H9z"/></svg>
+                <span class="icon-chip">
+                  <i data-lucide="monitor"></i>
                 </span>
                 <div>
-                  <strong>Glow Kit</strong>
-                  <span>Peach-toned makeup bundles with a soft, camera-friendly finish.</span>
+                  <strong>Setup Mood</strong>
+                  <span>Desk setup essentials.</span>
                 </div>
               </div>
             </article>
             <article class="category-card">
               <div class="icon-copy">
-                <span class="icon-chip" aria-hidden="true">
-                  <svg viewBox="0 0 24 24"><path d="M7 15a3 3 0 1 0 3 3V6l8-2v10a3 3 0 1 0 3 3V3l-14 3v9Z"/></svg>
+                <span class="icon-chip" style="background: var(--brand-5)">
+                  <i data-lucide="headphones"></i>
                 </span>
                 <div>
                   <strong>Audio Fun</strong>
-                  <span>Compact music accessories in bright colors for everyday carry.</span>
+                  <span>Wireless & high-fidelity.</span>
                 </div>
               </div>
             </article>
             <article class="category-card">
               <div class="icon-copy">
-                <span class="icon-chip" aria-hidden="true">
-                  <svg viewBox="0 0 24 24"><path d="M8 5 6 8l-2 2 3 3 2-2v8h6v-8l2 2 3-3-2-2-2-3H8Z"/></svg>
+                <span class="icon-chip" style="background: var(--brand-3)">
+                  <i data-lucide="shirt"></i>
                 </span>
                 <div>
                   <strong>Street Wear</strong>
-                  <span>Easy unisex silhouettes designed for quick styling and weekend looks.</span>
+                  <span>Unisex silhouettes.</span>
                 </div>
               </div>
             </article>
             <article class="category-card">
               <div class="icon-copy">
-                <span class="icon-chip" aria-hidden="true">
-                  <svg viewBox="0 0 24 24"><path d="M4 8h16v7H4z"/><path d="M8 15v4M16 15v4"/></svg>
+                <span class="icon-chip" style="background: var(--brand-4)">
+                  <i data-lucide="palette"></i>
                 </span>
                 <div>
-                  <strong>Desk Mood</strong>
-                  <span>Study desk accessories and lifestyle decor with a youthful palette.</span>
+                  <strong>Glow Up</strong>
+                  <span>Aesthetic skincare.</span>
                 </div>
               </div>
             </article>
@@ -144,67 +149,47 @@
         <section class="section-card">
           <div class="section-header">
             <div>
-              <span class="eyebrow">Featured deals</span>
-              <h2 class="section-title">Most saved products today</h2>
+              <span class="eyebrow">Featured</span>
+              <h2 class="section-title">Editor's Choice</h2>
             </div>
-            <span class="mini-tag">Mobile-first UI</span>
           </div>
 
           <div class="product-grid">
             <article class="product-card">
-              <div class="product-media product-media--headset"></div>
-              <span class="mini-tag">Best seller</span>
-              <h3 class="section-title" style="font-size: 1.25rem; margin-top: 0.75rem">Aurora Pods</h3>
-              <p class="muted-text">Wireless earbuds in coral tones, built for students who want style and speed.</p>
+              <div class="product-media product-media--headset" style="background: linear-gradient(155deg, #eff6ff, #dbeafe)"></div>
+              <span class="mini-tag">Hot Pick</span>
+              <h3 class="section-title" style="font-size: 1.25rem; margin-top: 0.75rem">Neon Pods Pro</h3>
+              <p class="muted-text">Immersive sound with adaptive noise canceling in electric blue.</p>
               <div class="price-line">
-                <strong class="price">689K</strong>
-                <span class="rating">4.9 / 5</span>
-              </div>
-            </article>
-
-            <article class="product-card">
-              <div class="product-media product-media--beauty"></div>
-              <span class="mini-tag">Flash deal</span>
-              <h3 class="section-title" style="font-size: 1.25rem; margin-top: 0.75rem">Peach Tint Box</h3>
-              <p class="muted-text">Lip tint and mini cushion set for a clean, photo-friendly everyday makeup look.</p>
-              <div class="price-line">
-                <strong class="price">429K</strong>
-                <span class="rating">4.8 / 5</span>
-              </div>
-            </article>
-
-            <article class="product-card">
-              <div class="product-media product-media--sneaker"></div>
-              <span class="mini-tag">New drop</span>
-              <h3 class="section-title" style="font-size: 1.25rem; margin-top: 0.75rem">Wave Sneaker</h3>
-              <p class="muted-text">Lightweight sneakers that fit campus outfits and relaxed weekend coffee runs.</p>
-              <div class="price-line">
-                <strong class="price">1.190K</strong>
-                <span class="rating">4.7 / 5</span>
+                <strong class="price">1.290K</strong>
+                <span class="rating"><i data-lucide="star" style="width: 1rem; height: 1rem; fill: var(--warning); color: var(--warning)"></i> 4.9</span>
               </div>
             </article>
           </div>
         </section>
       </div>
 
-      <nav class="nav-shell" style="margin-top: 1rem" aria-label="Primary navigation">
+      <nav class="nav-shell" style="margin-top: 1.5rem">
         <a class="nav-item is-active" href="#">
-          <span>HM</span>
+          <span><i data-lucide="home"></i></span>
           <span>Home</span>
         </a>
         <a class="nav-item" href="#">
-          <span>CT</span>
-          <span>Categories</span>
+          <span><i data-lucide="layout-grid"></i></span>
+          <span>Shop</span>
         </a>
         <a class="nav-item" href="#">
-          <span>SV</span>
-          <span>Saved</span>
+          <span><i data-lucide="heart"></i></span>
+          <span>Wishlist</span>
         </a>
         <a class="nav-item" href="#">
-          <span>ME</span>
-          <span>Me</span>
+          <span><i data-lucide="user"></i></span>
+          <span>Profile</span>
         </a>
       </nav>
     </main>
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
 </html>
